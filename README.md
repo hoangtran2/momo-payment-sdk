@@ -123,8 +123,8 @@ module.exports = MomoPaymentService;
 Pull requests are welcome
 
 ## Important
-Mail:  hoangtran2198@gmail.com 
-Skype: tranminhhoangnct@gmail.com 
+Mail:  hoangtran2198@gmail.com
+Skype: tranminhhoangnct@gmail.com
 Documentation: https://developers.momo.vn/v2/#/docs/qr_payment
 
 ## License
