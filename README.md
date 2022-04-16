@@ -17,11 +17,13 @@ npm i momo-payment-sdk
 ```javascript
 const MomoPayment = require('momo-payment-sdk');
 
-# HOST_WEBHOOK => MoMo system will call to your URL for alert the result 
+/* HOST_WEBHOOK => MoMo system will call to your URL for alert the result */
 const HOST_WEBHOOK = process.env.HOST_WEBHOOK;
 
-# constructor: partnerCode, accessKey, secretKey => provided from MOMO company & environment 
-# constructor: environment = "live" || "sandbox"
+/*
+ constructor: partnerCode, accessKey, secretKey => provided from Momo
+ constructor: environment = "live" || "sandbox"
+*/
 class MomoPaymentService {
   constructor(partnerCode, accessKey, secretKey, environment) {
     this.momoPayment = new MomoPayment({
@@ -32,7 +34,7 @@ class MomoPaymentService {
     });
   }
   
-# Return the URL payment by QR code
+/* Return the URL payment by QR code */
   async createPayment({
     orderId,
     amount,
@@ -58,7 +60,7 @@ class MomoPaymentService {
     }
   }
   
-# Rollback the transaction
+/* Rollback the transaction */
   async refundPayment({ requestId, orderId, amount, transId }) {
     try {
       if (!orderId || !amount || !transId) {
@@ -129,4 +131,4 @@ Documentation: https://developers.momo.vn/v2/#/docs/qr_payment
 
 ## Team
 [![Hoang Tran](https://github.com/hoangtran2.png?size=100)](https://github.com/hoangtran2)
-| [Hoang Tran](https://hoangtran.dev) |                                          
+| [Hoang Tran](https://bitinn.net/) |                                          
