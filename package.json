@@ -1,7 +1,7 @@
 {
   "name": "momo-payment-sdk",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Momo wallet payment by QR code",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -10,7 +10,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [
+    "momo",
+    "momo wallet",
+    "momo payment",
+    "momo node"
+  ],
+  "author": "Hoang Tran",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1"

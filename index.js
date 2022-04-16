@@ -51,6 +51,7 @@ class MomoPayment {
       });
       return res;
     } catch (error) {
+      console.error('error:', error)
       throw error;
     }
   }
@@ -91,6 +92,7 @@ class MomoPayment {
       });
       return res;
     } catch (error) {
+      console.error('error:', error)
       throw error;
     }
   }
