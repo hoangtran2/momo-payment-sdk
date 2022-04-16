@@ -79,7 +79,7 @@ class MomoPaymentService {
     }
   }
 
-# The function for verify webhook request
+/* The function for verify webhook request */
   verifySignature({
     signature,
     requestId,
